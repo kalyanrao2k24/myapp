@@ -1,0 +1,64 @@
+.company-logo{
+    width:30px;
+    height:30px;
+}
+
+.login-main-container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.login-sub-container{
+    width:max-content;
+    padding:15px;
+    border:2px solid gray;
+    border-radius:10px; 
+}
+
+.login-input-text{
+
+    width:250px;
+    height:35px;
+    margin:10px;
+    border:2px solid rgb(246, 239, 239);
+    outline:none;
+    padding:0px 10px;
+}
+
+.login-err-text{
+    font-size:15px;
+    font-family:Roboto;
+    color:red;
+    width:250px;
+    margin:0px 10px;
+}
+
+.login-text{
+    font: 25px bold;
+    color:blue;
+    font-family:Roboto;
+}
+
+.comapny-logo-container{
+
+    display:flex;
+    justify-content:start;
+    align-items:center;
+    margin:0px 10px;
+}
+
+.user-login-button{
+
+    width:250px;
+    height:35px;
+    background-color:blue;
+    color:white;
+    font-family:Roboto;
+    font-size:20px;
+    margin:10px;
+    border:none;
+    cursor: pointer;
+}

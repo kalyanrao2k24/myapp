@@ -1,0 +1,85 @@
+.emp-text-container{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+    margin:5px 0px;
+}
+
+.employee-input-text{
+
+    width:250px;
+    height:25px;
+    outline:none;
+    border:1px solid gray;
+}
+
+.emp-text{
+
+    font:14px bold;
+    margin-right:10px;
+    font-family:sans-serif;
+}
+
+.create-employee-header{
+
+    font-size:20px;
+    font-weight:600;
+    font-family:sans-serif;
+    color:orange;
+}
+
+.emp-select{
+
+    width:250px;
+    height:30px;
+    outline:none;
+    margin:0px ;
+}
+
+.login-err-emp-text{
+    color:red;
+    font-size:15px;
+    font-family:Roboto;
+    margin:0px 0px;
+    width:220px;
+}
+
+.gender-main-container{
+
+    display:flex;
+    align-items:center;
+    justify-content:start;
+    margin:0px;
+}
+
+.emp-button{
+
+    background-color:blue;
+    color:white;
+    font-size:16px;
+    font-weight:650;
+    border:none;
+    width:250px;
+    padding:7px;
+    margin-top:5px;
+}
+
+.add-employee-main-container{
+
+   width:100%;
+   height:100vh;
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+
+}
+
+.add-employee-sub-container{
+
+    border:3px solid whitesmoke;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:3px 3px 10px whitesmoke;
+}

@@ -1,0 +1,13 @@
+.empty-list-container{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.empty-list-container p{
+  font-size:15px;
+  font-weight:bold;
+  font-family:sans-serif;
+}

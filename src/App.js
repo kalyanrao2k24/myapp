@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./index.css"
+import Login from "./Components/Login";
+import {BrowserRouter as Router, Routes,Route} from "react-router-dom";
+import Dashboard from "./Components/Dashboard/Home";
+import Navbar from "./Components/Dashboard/Navbar";
+import Home from "./Components/Dashboard/Home";
+import AddEmployee from "./Components/Employee/NewEmployee";
+import EmployeeList from "./Components/Employee/EmployeeList";
+import UpdateEmployee from "./Components/Employee/UpdateEmployee";
+import ProtectRoute from "./Components/ProtectRoute";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App=()=>{
+
+  return(
+      <Router future={{ v7_relativeSplatPath: true }}>
+        <Navbar/>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/addEmployee" element={ <ProtectRoute element={<AddEmployee />}/>} />
+          <Route path="/employeeList" element={<ProtectRoute element={<EmployeeList />}/>} />
+          <Route path="/updateEmployee/:id" element={<ProtectRoute element={<UpdateEmployee />} />} />
+
+          <Route path="/dashboard" element={<ProtectRoute element={<Dashboard />} />}/>
+        </Routes>
+      </Router>
+       
+ 
+  )
 }
 
 export default App;

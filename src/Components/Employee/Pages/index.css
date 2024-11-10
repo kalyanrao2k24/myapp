@@ -1,0 +1,27 @@
+.page-button{
+    width:30px;
+    height:30px;
+    border-radius:5px;
+    border:none;
+    background-color:navy;
+    color:whitesmoke;
+    font-weight:bold;
+    margin:10px;
+}
+
+.page-main-containetr{
+    width:200px;
+   
+}
+
+.page-numbers{
+    height:30px;
+    width:30px;
+    border-radius:5px;
+    border:none;
+    background-color:white;
+    color:blue;
+    font-weight:bold;
+    margin:10px;
+    cursor: pointer;
+}
