@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-BaseUrl
+BaseUrl.js
 
 # testing
 /coverage
