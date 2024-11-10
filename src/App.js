@@ -8,6 +8,7 @@ import AddEmployee from "./Components/Employee/NewEmployee";
 import EmployeeList from "./Components/Employee/EmployeeList";
 import UpdateEmployee from "./Components/Employee/UpdateEmployee";
 import ProtectRoute from "./Components/ProtectRoute";
+import NotFound from "./Components/NotFound";
 
 const App=()=>{
 
@@ -22,6 +23,7 @@ const App=()=>{
           <Route path="/updateEmployee/:id" element={<ProtectRoute element={<UpdateEmployee />} />} />
 
           <Route path="/dashboard" element={<ProtectRoute element={<Dashboard />} />}/>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
        
